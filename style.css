@@ -1,0 +1,99 @@
+:root {
+  --dark-color: #111;
+  --light-color: #f3f3f3;
+  --medium-color: #bbb;
+  --border-color: #ddd;
+  --main-color: #2c93ee;
+  --error-color: #FF4136;
+  --border-radius: 4px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--dark-color);
+  font-family: sans-serif;
+  color: var(--dark-color);
+}
+
+html, body {
+  height: 100%;  
+}
+
+/**/
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.myForm {
+  padding: 20px;
+  background: #fff;
+  width: 100%;
+  max-width: 400px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, .2);
+  border: 1px solid var(--border-color);
+  margin: auto 20px;
+}
+
+.myForm h2 {
+  padding: 10px 0 30px;
+  text-align: center;
+}
+
+.myForm .form-fields {
+  margin: 0 0 20px;
+}
+
+.myForm label {
+  display: block;
+  font-size: 10pt;
+  color: #999;
+}
+
+::placeholder {
+  color: #ddd;
+  font-size: 10pt;
+}
+
+.myForm input[type] {
+  width: 100%;
+  border: 1px solid var(--border-color);
+  font-size: 18px;
+  padding: 5px 10px;
+  border-radius: var(--border-radius);
+  transition: border 300ms ease-in-out;
+}
+
+.myForm input[type]:focus {
+  border-color: var(--medium-color);
+}
+
+.myForm button {
+  border: none;
+  background: var(--main-color);
+  padding: 10px 20px;
+  cursor: pointer;
+  font-weight: 700;
+  color: var(--light-color);
+  border-radius: var(--border-radius);
+  transform: filter 300ms ease-in-out;
+}
+
+.myForm button:hover {
+  filter: brightness(80%);
+}
+
+.myForm .error-message {
+  font-size: 9pt;
+  padding: 5px 0;
+  color: var(--error-color);
+  display: none;
+}
