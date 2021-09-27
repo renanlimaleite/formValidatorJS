@@ -1,9 +1,0 @@
-{
-  "name": "formValidator",
-  "version": "1.0.0",
-  "main": "index.js",
-  "license": "MIT",
-  "dependencies": {
-    "validator": "^13.6.0"
-  }
-}

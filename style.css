@@ -97,3 +97,11 @@ html, body {
   color: var(--error-color);
   display: none;
 }
+
+.myForm .show-error-message .error-message {
+  display: block;
+}
+
+.form .show-error-message input[type] {
+  border-color: var(--error-color);
+}
